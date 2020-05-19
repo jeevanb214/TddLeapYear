@@ -12,8 +12,9 @@ public class LeapYear {
 			return flag = false;
 		} else if (year % 4 == 0) {
 			return flag = true;
-		} else
+		} else {
 			return false;
+		}
 	}
 
 }
