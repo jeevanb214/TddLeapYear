@@ -5,7 +5,11 @@ public class LeapYear {
 	boolean flag = false;
 
 	public boolean checkLeapYear(int year) {
-		return false;
+		if (year % 400 == 0) {
+			flag = true;
+			return flag;
+		} else
+			return false;
 	}
 
 }
