@@ -49,4 +49,25 @@ class LeapYearTest {
 		}
 	}
 
+	// All years divisible by 4 but not by 100 ARE leap years (e.g., 2008, 2012,
+	// 2016),
+	@Nested
+	class testWith4NotBy100 {
+
+		@Test
+		void test1() {
+			assertEquals(true, ly.checkLeapYear(2008), "leap Year");
+		}
+
+		@Test
+		void test2() {
+			assertEquals(true, ly.checkLeapYear(2012), "leap Year");
+		}
+
+		@Test
+		void test3() {
+			assertEquals(true, ly.checkLeapYear(2016), "leap Year");
+		}
+	}
+
 }
